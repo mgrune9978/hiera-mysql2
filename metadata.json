@@ -1,10 +1,13 @@
 {
-  "name": "nvitaterna-hiera-mysql2",
+  "name": "nvitaterna-hiera_mysql2",
   "version": "0.1.0",
   "author": "Nicolas Vitaterna",
-  "summary": "",
+  "summary": "This module is used to retrieve data from MySQL through hiera.",
   "license": "MIT",
-  "source": "",
+  "source": "https://github.com/nvitaterna/hiera-mysql2",
+  "project_page": "https://github.com/nvitaterna/hiera-mysql2/blob/master/README.md",
+  "issues_url": "https://github.com/nvitaterna/hiera-mysql2/issues",
+  "tags": ["mysql", "mariadb", "hiera", "hiera5", "puppet5"],
   "dependencies": [
 
   ],
@@ -51,8 +54,5 @@
       "name": "puppet",
       "version_requirement": ">= 4.7.0 < 6.0.0"
     }
-  ],
-  "pdk-version": "1.7.0",
-  "template-url": "file:///opt/puppetlabs/pdk/share/cache/pdk-templates.git",
-  "template-ref": "1.7.0-0-g57412ed"
+  ]
 }
