@@ -8,7 +8,7 @@ This module is used to retrieve data from a MySQL database for use in Puppet.
 ## Setup
 
 ### Installation
-`puppet module install nvitaterna/hiera-mysql2`
+`puppet module install nvitaterna-hiera_mysql2`
 
 ### Dependencies
 If you are using Hiera-mysql under jRuby (puppetserver):
