@@ -1,6 +1,6 @@
 {
   "name": "nvitaterna-hiera_mysql2",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Nicolas Vitaterna",
   "summary": "This module is used to retrieve data from MySQL through hiera.",
   "license": "MIT",
