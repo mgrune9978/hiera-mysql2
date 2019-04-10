@@ -1,17 +1,12 @@
 Puppet::Functions.create_function(:mysql2_lookup_key) do
   require 'puppet'
   require 'facter'
+  require 'java'
 
-  if defined?(JRUBY_VERSION)
+  begin 
     require 'jdbc/mysql'
-    require 'java'
-  else
-    begin
-      require 'mysql2'
-    rescue LoadError
-      require 'rubygems'
-      require 'mysql2'
-    end
+  rescue LoadError
+    puts 'please install some_gem first!'
   end
 
   dispatch :mysql2_lookup_key do
