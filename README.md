@@ -1,6 +1,7 @@
 
 # hiera-mysql2
 This is hiera-mysql2 for use with Hiera 5 and Puppet 5.
+This module was forked as I was not interested in using anyting other than the jdbc-mysql gem and wanted to install this gem using puppet, which was not possible with the parent module.
 
 ## Description
 This module is used to retrieve data from a MySQL database for use in Puppet.
@@ -8,13 +9,10 @@ This module is used to retrieve data from a MySQL database for use in Puppet.
 ## Setup
 
 ### Installation
-`puppet module install nvitaterna-hiera_mysql2`
+Add this module to your puppet file
 
 ### Dependencies
-If you are using Hiera-mysql under jRuby (puppetserver):
-`puppetserver gem install jdbc-mysql`
-If you are using Hiera-mysql under standard ruby:
-`/opt/puppetlabs/puppet/bin/gem install mysql2`
+puppetserver gem install jdbc-mysql`
 
 ### Configuration
 hiera.yaml:
@@ -49,4 +47,4 @@ $machines = lookup('machines')
 
 ### Credits
 
-Credit to [crayfishx/hiera-mysql](https://github.com/crayfishx/hiera-mysql) and [Telmo/hiera-mysql-backend](https://github.com/Telmo/hiera-mysql-backend).
+Credit to [crayfishx/hiera-mysql](https://github.com/crayfishx/hiera-mysql) and [Telmo/hiera-mysql-backend](https://github.com/Telmo/hiera-mysql-backend) and [nvitaterna/hiera-mysql2](https://github.com/nvitaterna/hiera-mysql2).
